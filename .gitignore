@@ -1,0 +1,44 @@
+# Byte-compiled / optimized / DLL files
+pygco.egg-info
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Compress files
+*.zip
+
+# C extensions
+*.cpp
+*.o
+*.so
+
+# installed libraries
+libs/
+
+# temporary structure
+data/
+build/
+output/
+results/
+temporary/
+test_wrapper
+
+# PyCharm
+.idea/
+# Dropbox sync
+.dropbox.attr
+
+# Unit test / coverage reports
+htmlcov/
+.tox/
+pytest.*
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+.hypothesis/
+
+#3rdparty
+EPPM
