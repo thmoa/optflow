@@ -8,9 +8,9 @@ __pycache__/
 *.zip
 
 # C extensions
-*.cpp
-*.o
-*.so
+optflow.cpp
+optflow.so
+
 
 # installed libraries
 libs/
