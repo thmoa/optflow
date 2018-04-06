@@ -1,6 +1,6 @@
 # Python Optical Flow
 
-This package provides pyhton bindings to CUDA accelerated optical flow methods.
+This package provides python bindings to CUDA accelerated optical flow methods.
 
 ## Methods
 
@@ -32,7 +32,8 @@ Taken from OpenCV 3.X <sup>[1](#opencv)</sup>. OpenCV must be installed on the m
 ```
 git clone https://github.com/linchaobao/EPPM ~/EPPM
 ln -s ~/EPPM .
-python setup.py build_ext -i
+python2 setup.py build_ext -i
+python2 demo.py
 ```
 
 
