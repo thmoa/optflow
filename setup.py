@@ -18,13 +18,13 @@ def locate_cuda():
         nvcc = os.path.join(home, 'bin', 'nvcc')
 
         if not os.path.exists(nvcc):
-            raise EnvironmentError('The CUDA path could not be located')
+            raise EnvironmentError('The CUDA path could not be located. CUDAHOME not properly set.')
     else:
         # otherwise, search for NVCC
-        nvcc = subprocess.check_output('which nvcc'.split()).decode()
-
-        if not nvcc:
-            raise EnvironmentError('The CUDA path could not be located')
+        try:
+            nvcc = subprocess.check_output('which nvcc'.split()).decode()
+        except subprocess.CalledProcessError:
+            raise EnvironmentError('The CUDA path could not be located. Try to set CUDAHOME.')
 
         home = os.path.abspath(os.path.dirname(nvcc) + '/..')
 
